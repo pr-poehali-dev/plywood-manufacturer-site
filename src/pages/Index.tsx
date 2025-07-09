@@ -41,6 +41,12 @@ const Index = () => {
                 Продукция
               </a>
               <a
+                href="#delivery"
+                className="text-foreground hover:text-primary transition-colors"
+              >
+                Доставка
+              </a>
+              <a
                 href="#contacts"
                 className="text-foreground hover:text-primary transition-colors"
               >
@@ -292,6 +298,176 @@ const Index = () => {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Delivery Section */}
+      <section id="delivery" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-4">
+              Доставка
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Быстро и надежно доставим фанеру в любую точку России
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="animate-fade-in">
+              <img
+                src="/img/141017fd-d72a-45a8-a4e8-8c2b99f33b28.jpg"
+                alt="Доставка фанеры"
+                className="rounded-lg shadow-lg w-full"
+              />
+            </div>
+            <div className="animate-fade-in">
+              <h3 className="text-3xl font-bold text-foreground mb-6">
+                Собственный автопарк
+              </h3>
+              <p className="text-lg text-muted-foreground mb-6">
+                Мы обеспечиваем быструю и безопасную доставку благодаря
+                собственному автопарку из 25 специализированных автомобилей. Вся
+                продукция надежно упакована и защищена от влаги.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <Icon name="Clock" className="h-6 w-6 text-primary" />
+                  <span className="text-foreground font-medium">
+                    Доставка в течение 1-3 дней
+                  </span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="Shield" className="h-6 w-6 text-primary" />
+                  <span className="text-foreground font-medium">
+                    Страхование груза
+                  </span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="MapPin" className="h-6 w-6 text-primary" />
+                  <span className="text-foreground font-medium">
+                    Отслеживание в реальном времени
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="text-center hover:shadow-lg transition-shadow animate-fade-in">
+              <CardContent className="p-6">
+                <Icon
+                  name="Truck"
+                  className="h-12 w-12 text-primary mx-auto mb-4"
+                />
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  Автомобильная доставка
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  По Москве и МО — бесплатно при заказе от 50 000 ₽
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Доставка в течение дня</li>
+                  <li>• Разгрузка включена</li>
+                  <li>• Гибкие временные слоты</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-shadow animate-fade-in">
+              <CardContent className="p-6">
+                <Icon
+                  name="Train"
+                  className="h-12 w-12 text-primary mx-auto mb-4"
+                />
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  Железнодорожная доставка
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Для больших партий по всей России
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Экономичная доставка</li>
+                  <li>• Большие объемы</li>
+                  <li>• Надежная упаковка</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-shadow animate-fade-in">
+              <CardContent className="p-6">
+                <Icon
+                  name="Package"
+                  className="h-12 w-12 text-primary mx-auto mb-4"
+                />
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  Самовывоз
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Со склада в Москве — скидка 5%
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Работаем с 8:00 до 18:00</li>
+                  <li>• Помощь в погрузке</li>
+                  <li>• Предварительный заказ</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-16 bg-muted rounded-lg p-8">
+            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
+              Стоимость доставки
+            </h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-semibold text-foreground mb-4">
+                  <Icon name="MapPin" className="inline h-5 w-5 mr-2" />
+                  По Москве и МО
+                </h4>
+                <div className="space-y-2 text-muted-foreground">
+                  <div className="flex justify-between">
+                    <span>До 10 м³</span>
+                    <span className="font-medium">3 000 ₽</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>10-20 м³</span>
+                    <span className="font-medium">4 500 ₽</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Свыше 20 м³</span>
+                    <span className="font-medium">Бесплатно</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-4">
+                  <Icon name="Map" className="inline h-5 w-5 mr-2" />
+                  По России
+                </h4>
+                <div className="space-y-2 text-muted-foreground">
+                  <div className="flex justify-between">
+                    <span>До 500 км</span>
+                    <span className="font-medium">50 ₽/км</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>500-1000 км</span>
+                    <span className="font-medium">45 ₽/км</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Свыше 1000 км</span>
+                    <span className="font-medium">40 ₽/км</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-6 text-center">
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
+                <Icon name="Calculator" className="mr-2 h-4 w-4" />
+                Рассчитать стоимость
+              </Button>
             </div>
           </div>
         </div>
