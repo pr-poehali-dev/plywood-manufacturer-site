@@ -41,6 +41,12 @@ const Index = () => {
                 Продукция
               </a>
               <a
+                href="#applications"
+                className="text-foreground hover:text-primary transition-colors"
+              >
+                Применение
+              </a>
+              <a
                 href="#delivery"
                 className="text-foreground hover:text-primary transition-colors"
               >
@@ -88,11 +94,23 @@ const Index = () => {
               </div>
             </div>
             <div className="animate-scale-in">
-              <img
-                src="/img/633e8ec9-8ef1-45d7-934c-1c53cfbe31fa.jpg"
-                alt="Производство фанеры"
-                className="rounded-lg shadow-2xl w-full"
-              />
+              <div className="grid grid-cols-2 gap-4">
+                <img
+                  src="/img/633e8ec9-8ef1-45d7-934c-1c53cfbe31fa.jpg"
+                  alt="Производство фанеры"
+                  className="rounded-lg shadow-lg w-full h-48 object-cover"
+                />
+                <img
+                  src="/img/1ff17227-1796-4dd2-9418-c77c1a5cdd75.jpg"
+                  alt="Производственная линия"
+                  className="rounded-lg shadow-lg w-full h-48 object-cover"
+                />
+                <img
+                  src="/img/893b6914-a1d0-4683-b1ae-d9acb0d9c484.jpg"
+                  alt="Контроль качества"
+                  className="rounded-lg shadow-lg w-full h-48 object-cover col-span-2"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -190,6 +208,201 @@ const Index = () => {
                 </Button>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Applications Section */}
+      <section id="applications" className="py-20 bg-muted">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-4">
+              Применение фанеры
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Универсальный материал для строительства, мебели и дизайна
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-16">
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/e0571782-a58c-4f80-b3db-277b397ebae1.jpg"
+                  alt="Строительство"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="HardHat" className="mr-2 h-5 w-5" />
+                  Строительство
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Опалубка для бетона</li>
+                  <li>• Черновые полы</li>
+                  <li>• Обшивка стен</li>
+                  <li>• Кровельные работы</li>
+                  <li>• Временные конструкции</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/835199d6-0490-4c6f-bdb1-2d4d8f0869e8.jpg"
+                  alt="Мебельное производство"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="Armchair" className="mr-2 h-5 w-5" />
+                  Мебель
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Корпусная мебель</li>
+                  <li>• Столешницы</li>
+                  <li>• Полки и стеллажи</li>
+                  <li>• Детская мебель</li>
+                  <li>• Офисная мебель</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/c8cd1a1f-88e9-4b13-a3c1-b57edd31bc84.jpg"
+                  alt="Упаковка"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="Package" className="mr-2 h-5 w-5" />
+                  Упаковка
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Транспортная тара</li>
+                  <li>• Ящики и контейнеры</li>
+                  <li>• Поддоны</li>
+                  <li>• Защитная упаковка</li>
+                  <li>• Экспортная упаковка</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/80faa480-5c43-4a29-82ce-06d1ae414c46.jpg"
+                  alt="Дизайн и декор"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="Palette" className="mr-2 h-5 w-5" />
+                  Дизайн
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Декоративные панели</li>
+                  <li>• Перегородки</li>
+                  <li>• Выставочные стенды</li>
+                  <li>• Рекламные конструкции</li>
+                  <li>• Арт-объекты</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-white rounded-lg p-8 shadow-lg">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  Почему выбирают фанеру?
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <Icon name="Zap" className="h-6 w-6 text-primary mt-1" />
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">
+                        Прочность и долговечность
+                      </h4>
+                      <p className="text-muted-foreground text-sm">
+                        Многослойная структура обеспечивает высокую прочность
+                        на изгиб и устойчивость к деформации
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <Icon name="Leaf" className="h-6 w-6 text-primary mt-1" />
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">
+                        Экологичность
+                      </h4>
+                      <p className="text-muted-foreground text-sm">
+                        Изготовлена из натурального дерева с использованием
+                        безопасных клеевых составов
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <Icon name="Wrench" className="h-6 w-6 text-primary mt-1" />
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">
+                        Простота обработки
+                      </h4>
+                      <p className="text-muted-foreground text-sm">
+                        Легко пилится, сверлится и обрабатывается стандартными
+                        инструментами
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <Icon name="DollarSign" className="h-6 w-6 text-primary mt-1" />
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">
+                        Экономичность
+                      </h4>
+                      <p className="text-muted-foreground text-sm">
+                        Оптимальное соотношение цены и качества по сравнению
+                        с массивом дерева
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg p-8">
+                <h4 className="text-2xl font-bold text-foreground mb-6 text-center">
+                  Технические характеристики
+                </h4>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center p-3 bg-white rounded">
+                    <span className="font-medium text-foreground">Плотность</span>
+                    <span className="text-muted-foreground">650-700 кг/м³</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-white rounded">
+                    <span className="font-medium text-foreground">Влажность</span>
+                    <span className="text-muted-foreground">6-10%</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-white rounded">
+                    <span className="font-medium text-foreground">Прочность на изгиб</span>
+                    <span className="text-muted-foreground">40-80 МПа</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-white rounded">
+                    <span className="font-medium text-foreground">Температура эксплуатации</span>
+                    <span className="text-muted-foreground">-40°C до +50°C</span>
+                  </div>
+                </div>
+                <Button className="w-full mt-6" size="lg">
+                  <Icon name="FileText" className="mr-2 h-4 w-4" />
+                  Техническая документация
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
