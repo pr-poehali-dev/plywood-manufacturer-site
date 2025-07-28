@@ -606,6 +606,190 @@ const Index = () => {
                 </ul>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/dad59081-ace8-43e1-aad8-396be894a0eb.jpg"
+                  alt="Детские площадки"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="Smile" className="mr-2 h-5 w-5" />
+                  Детские площадки
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Игровые комплексы</li>
+                  <li>• Горки и качели</li>
+                  <li>• Домики и лабиринты</li>
+                  <li>• Спортивные снаряды</li>
+                  <li>• Ограждения площадок</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/b8135683-8e64-4034-960d-e06fe1a8349b.jpg"
+                  alt="Звукоизоляция"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="Volume2" className="mr-2 h-5 w-5" />
+                  Звукоизоляция
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Студии звукозаписи</li>
+                  <li>• Акустические панели</li>
+                  <li>• Звукоизоляция помещений</li>
+                  <li>• Концертные залы</li>
+                  <li>• Домашние кинотеатры</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/54c2e354-1f52-42ec-8ef3-a8e735ea0528.jpg"
+                  alt="Торговое оборудование"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="ShoppingBag" className="mr-2 h-5 w-5" />
+                  Торговое оборудование
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Торговые стеллажи</li>
+                  <li>• Витрины и прилавки</li>
+                  <li>• Кассовые зоны</li>
+                  <li>• Примерочные кабины</li>
+                  <li>• Складское оборудование</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/93cbd3f4-3087-4691-b728-d0b98487f1c8.jpg"
+                  alt="Театральные декорации"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="Drama" className="mr-2 h-5 w-5" />
+                  Театр и сцена
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Театральные декорации</li>
+                  <li>• Сценические конструкции</li>
+                  <li>• Подмостки и настилы</li>
+                  <li>• Киносъёмочные павильоны</li>
+                  <li>• Концертные площадки</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/e51bcb0f-b316-4c9e-8825-d33eaa530a57.jpg"
+                  alt="Судостроение"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="Ship" className="mr-2 h-5 w-5" />
+                  Судостроение
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Яхты и катера</li>
+                  <li>• Внутренняя отделка судов</li>
+                  <li>• Мебель для кают</li>
+                  <li>• Переборки и настилы</li>
+                  <li>• Лодки и байдарки</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/12e417cc-7e72-486e-a250-e8b7e9cd9279.jpg"
+                  alt="Выставочные стенды"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="Monitor" className="mr-2 h-5 w-5" />
+                  Выставки и стенды
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Выставочные стенды</li>
+                  <li>• Презентационные конструкции</li>
+                  <li>• Музейные экспозиции</li>
+                  <li>• Торговые павильоны</li>
+                  <li>• Рекламные конструкции</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/a2045d21-ca53-4606-85a4-346804f1f3ab.jpg"
+                  alt="Спортивные сооружения"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="Zap" className="mr-2 h-5 w-5" />
+                  Спорт и активность
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Скейт-парки и рампы</li>
+                  <li>• Спортивные площадки</li>
+                  <li>• Тренажёрные залы</li>
+                  <li>• Турники и брусья</li>
+                  <li>• Велотреки</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
+              <CardHeader>
+                <img
+                  src="/img/03ac9f8d-4756-40b5-85e0-135f17e0565d.jpg"
+                  alt="Интерьерные решения"
+                  className="rounded-lg mb-4 w-full h-48 object-cover"
+                />
+                <CardTitle className="text-xl text-primary flex items-center">
+                  <Icon name="Home" className="mr-2 h-5 w-5" />
+                  Интерьеры
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Встроенная мебель</li>
+                  <li>• Стеновые панели</li>
+                  <li>• Потолочные конструкции</li>
+                  <li>• Перегородки и зонирование</li>
+                  <li>• Лестницы и подиумы</li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="bg-white rounded-lg p-8 shadow-lg">
