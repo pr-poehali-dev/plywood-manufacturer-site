@@ -94,21 +94,51 @@ const Index = () => {
               </div>
             </div>
             <div className="animate-scale-in">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-3 gap-3">
                 <img
-                  src="/img/633e8ec9-8ef1-45d7-934c-1c53cfbe31fa.jpg"
-                  alt="Производство фанеры"
-                  className="rounded-lg shadow-lg w-full h-48 object-cover"
+                  src="/img/9d0e99d4-d910-4fe6-b0d9-8b18ef1cb16e.jpg"
+                  alt="Склад фанеры"
+                  className="rounded-lg shadow-lg w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
                 />
                 <img
-                  src="/img/1ff17227-1796-4dd2-9418-c77c1a5cdd75.jpg"
-                  alt="Производственная линия"
-                  className="rounded-lg shadow-lg w-full h-48 object-cover"
+                  src="/img/9f3b4be9-57f4-48fc-9203-ef7722d4ebfc.jpg"
+                  alt="Структура фанеры"
+                  className="rounded-lg shadow-lg w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
                 />
                 <img
-                  src="/img/893b6914-a1d0-4683-b1ae-d9acb0d9c484.jpg"
+                  src="/img/d114935b-0c5d-41bd-92ea-38eae47f5b71.jpg"
+                  alt="Мастерская"
+                  className="rounded-lg shadow-lg w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <img
+                  src="/img/dc4f13fb-8b6f-41a1-9e7d-9391daa887d4.jpg"
+                  alt="Кухня из фанеры"
+                  className="rounded-lg shadow-lg w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <img
+                  src="/img/cacfb948-622f-40fa-a846-d011c21f1b2e.jpg"
+                  alt="Монтаж фанеры"
+                  className="rounded-lg shadow-lg w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <img
+                  src="/img/c87f5b9e-6d7b-433c-9819-a4b2acd34638.jpg"
+                  alt="Офисная мебель"
+                  className="rounded-lg shadow-lg w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <img
+                  src="/img/470c5e20-9ab5-4d79-8167-86b3565a93c5.jpg"
                   alt="Контроль качества"
-                  className="rounded-lg shadow-lg w-full h-48 object-cover col-span-2"
+                  className="rounded-lg shadow-lg w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <img
+                  src="/img/52a30958-0072-46eb-adea-09d9751d7c14.jpg"
+                  alt="Производство"
+                  className="rounded-lg shadow-lg w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <img
+                  src="/img/84e3725c-a054-4dca-b6ba-96b37f05b63e.jpg"
+                  alt="Детская мебель"
+                  className="rounded-lg shadow-lg w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
