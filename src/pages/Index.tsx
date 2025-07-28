@@ -9,6 +9,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
+import ProductCard from "@/components/ProductCard";
 
 const Index = () => {
   return (
@@ -146,98 +147,357 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Products Section */}
+      {/* Products Catalog Section */}
       <section id="products" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">
-              Наша продукция
+              Каталог продукции
             </h2>
             <p className="text-xl text-muted-foreground">
-              Два основных вида фанеры для различных задач
+              Полный ассортимент фанеры для любых задач и бюджета
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
-              <CardHeader>
-                <img
-                  src="/img/56324dac-5431-48e2-a261-47abb3859f50.jpg"
-                  alt="Березовая фанера"
-                  className="rounded-lg mb-4 w-full h-48 object-cover"
-                />
-                <CardTitle className="text-2xl text-primary">
-                  Березовая фанера
-                </CardTitle>
-                <CardDescription>
-                  Прочная и долговечная фанера из березового шпона
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-center">
-                    <Icon name="Check" className="h-4 w-4 text-primary mr-2" />
-                    Высокая прочность и стойкость
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" className="h-4 w-4 text-primary mr-2" />
-                    Идеальна для мебели и строительства
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" className="h-4 w-4 text-primary mr-2" />
-                    Толщина от 3 до 30 мм
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" className="h-4 w-4 text-primary mr-2" />
-                    Сорта: I, II, III, IV
-                  </li>
-                </ul>
-                <Button className="mt-4 w-full" variant="outline">
-                  <Icon name="Info" className="mr-2 h-4 w-4" />
-                  Подробнее
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+            <ProductCard
+              title="Фанера ФК березовая I/II"
+              description="Премиум качество березовой фанеры на формальдегидном клее. Высший сорт для ответственных конструкций и мебельного производства."
+              image="/img/f3f102ff-d18f-436d-8db1-42622e28a597.jpg"
+              price="3 250 ₽"
+              specifications={[
+                { label: "Толщина", value: "18 мм" },
+                { label: "Размер", value: "1525×1525" },
+                { label: "Сорт", value: "I/II" },
+                { label: "Влажность", value: "6-8%" },
+                { label: "Класс эмиссии", value: "E1" },
+                { label: "Плотность", value: "680 кг/м³" }
+              ]}
+              advantages={[
+                "Идеальная поверхность без сучков",
+                "Повышенная прочность на изгиб",
+                "Экологическая безопасность",
+                "Долговечность более 25 лет"
+              ]}
+              applications={[
+                "Элитная мебель",
+                "Декоративные панели",
+                "Музыкальные инструменты",
+                "Дизайнерские проекты"
+              ]}
+              inStock={true}
+              popular={true}
+            />
 
-            <Card className="hover:shadow-lg transition-shadow animate-fade-in">
-              <CardHeader>
-                <img
-                  src="/img/1ca0d209-e94e-4a90-a41d-5949b2e4015d.jpg"
-                  alt="Хвойная фанера"
-                  className="rounded-lg mb-4 w-full h-48 object-cover"
-                />
-                <CardTitle className="text-2xl text-primary">
-                  Хвойная фанера
-                </CardTitle>
-                <CardDescription>
-                  Экономичная фанера из хвойных пород дерева
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-center">
-                    <Icon name="Check" className="h-4 w-4 text-primary mr-2" />
-                    Отличное соотношение цена/качество
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" className="h-4 w-4 text-primary mr-2" />
-                    Подходит для упаковки и опалубки
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" className="h-4 w-4 text-primary mr-2" />
-                    Толщина от 4 до 21 мм
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" className="h-4 w-4 text-primary mr-2" />
-                    Влагостойкие варианты
-                  </li>
-                </ul>
-                <Button className="mt-4 w-full" variant="outline">
-                  <Icon name="Info" className="mr-2 h-4 w-4" />
-                  Подробнее
-                </Button>
-              </CardContent>
-            </Card>
+            <ProductCard
+              title="Фанера ФК березовая II/III"
+              description="Стандартное качество березовой фанеры. Оптимальное решение для большинства строительных и мебельных задач."
+              image="/img/9f3b4be9-57f4-48fc-9203-ef7722d4ebfc.jpg"
+              price="2 850 ₽"
+              oldPrice="3 100 ₽"
+              discount="8%"
+              specifications={[
+                { label: "Толщина", value: "18 мм" },
+                { label: "Размер", value: "1525×1525" },
+                { label: "Сорт", value: "II/III" },
+                { label: "Влажность", value: "6-10%" },
+                { label: "Класс эмиссии", value: "E1" },
+                { label: "Плотность", value: "650 кг/м³" }
+              ]}
+              advantages={[
+                "Хорошее качество поверхности",
+                "Устойчивость к деформации",
+                "Отличное соотношение цена/качество",
+                "Легкость в обработке"
+              ]}
+              applications={[
+                "Корпусная мебель",
+                "Внутренние работы",
+                "Полы и стены",
+                "Упаковочные материалы"
+              ]}
+              inStock={true}
+            />
+
+            <ProductCard
+              title="Фанера ФСФ влагостойкая"
+              description="Влагостойкая фанера на фенолформальдегидном клее. Подходит для наружных работ и влажных помещений."
+              image="/img/16e78079-30af-4025-ad0c-dcd533654327.jpg"
+              price="3 450 ₽"
+              specifications={[
+                { label: "Толщина", value: "15 мм" },
+                { label: "Размер", value: "1525×1525" },
+                { label: "Сорт", value: "II/III" },
+                { label: "Влажность", value: "8-12%" },
+                { label: "Тип клея", value: "ФСФ" },
+                { label: "Влагостойкость", value: "Высокая" }
+              ]}
+              advantages={[
+                "Повышенная влагостойкость",
+                "Стойкость к температурам",
+                "Биостойкость",
+                "Долговечность в агрессивной среде"
+              ]}
+              applications={[
+                "Наружная отделка",
+                "Влажные помещения",
+                "Кровельные работы",
+                "Строительная опалубка"
+              ]}
+              inStock={true}
+            />
+
+            <ProductCard
+              title="Фанера хвойная ФК"
+              description="Экономичная хвойная фанера на формальдегидном клее. Идеальна для упаковки и временных конструкций."
+              image="/img/d114935b-0c5d-41bd-92ea-38eae47f5b71.jpg"
+              price="1 950 ₽"
+              specifications={[
+                { label: "Толщина", value: "12 мм" },
+                { label: "Размер", value: "1525×1525" },
+                { label: "Сорт", value: "III/IV" },
+                { label: "Влажность", value: "8-12%" },
+                { label: "Порода", value: "Сосна/ель" },
+                { label: "Плотность", value: "450 кг/м³" }
+              ]}
+              advantages={[
+                "Доступная цена",
+                "Легкий вес",
+                "Хорошие изоляционные свойства",
+                "Простота обработки"
+              ]}
+              applications={[
+                "Упаковочная тара",
+                "Временные конструкции",
+                "Черновые работы",
+                "Подложка под полы"
+              ]}
+              inStock={true}
+            />
+
+            <ProductCard
+              title="Фанера гибкая 6мм"
+              description="Тонкая гибкая фанера для создания изогнутых форм. Незаменима в дизайне и декоративных работах."
+              image="/img/778d26f7-b1a5-4e47-ab57-2d35d6e49004.jpg"
+              price="4 200 ₽"
+              specifications={[
+                { label: "Толщина", value: "6 мм" },
+                { label: "Размер", value: "1525×1525" },
+                { label: "Сорт", value: "I/II" },
+                { label: "Радиус изгиба", value: "от 50 см" },
+                { label: "Слоев", value: "5" },
+                { label: "Гибкость", value: "Высокая" }
+              ]}
+              advantages={[
+                "Возможность изгиба без разрушения",
+                "Гладкая поверхность",
+                "Равномерная толщина",
+                "Эстетичный внешний вид"
+              ]}
+              applications={[
+                "Криволинейная мебель",
+                "Арки и своды",
+                "Дизайнерские элементы",
+                "Декоративные панели"
+              ]}
+              inStock={false}
+            />
+
+            <ProductCard
+              title="Фанера ламинированная"
+              description="Фанера с защитно-декоративным покрытием. Готова к использованию без дополнительной отделки."
+              image="/img/dc4f13fb-8b6f-41a1-9e7d-9391daa887d4.jpg"
+              price="4 850 ₽"
+              specifications={[
+                { label: "Толщина", value: "21 мм" },
+                { label: "Размер", value: "1525×1525" },
+                { label: "Покрытие", value: "Ламинат" },
+                { label: "Цвет", value: "Белый/Коричневый" },
+                { label: "Износостойкость", value: "Высокая" },
+                { label: "Влагостойкость", value: "Повышенная" }
+              ]}
+              advantages={[
+                "Готовая к использованию поверхность",
+                "Стойкость к истиранию",
+                "Легкость в уходе",
+                "Широкая цветовая гамма"
+              ]}
+              applications={[
+                "Столешницы",
+                "Мебельные фасады",
+                "Стеновые панели",
+                "Торговое оборудование"
+              ]}
+              inStock={true}
+            />
+
+            <ProductCard
+              title="Фанера березовая 30мм"
+              description="Толстая березовая фанера для особо прочных конструкций. Выдерживает максимальные нагрузки."
+              image="/img/52a30958-0072-46eb-adea-09d9751d7c14.jpg"
+              price="5 650 ₽"
+              specifications={[
+                { label: "Толщина", value: "30 мм" },
+                { label: "Размер", value: "1525×1525" },
+                { label: "Сорт", value: "II/III" },
+                { label: "Слоев", value: "21" },
+                { label: "Нагрузка", value: "до 400 кг/м²" },
+                { label: "Вес", value: "20.4 кг/лист" }
+              ]}
+              advantages={[
+                "Максимальная прочность",
+                "Высокая несущая способность",
+                "Стабильность размеров",
+                "Долговечность конструкций"
+              ]}
+              applications={[
+                "Несущие конструкции",
+                "Промышленные полы",
+                "Сценические подмостки",
+                "Спортивные площадки"
+              ]}
+              inStock={true}
+            />
+
+            <ProductCard
+              title="Фанера авиационная"
+              description="Специальная березовая фанера повышенной прочности. Соответствует авиационным стандартам качества."
+              image="/img/470c5e20-9ab5-4d79-8167-86b3565a93c5.jpg"
+              price="6 850 ₽"
+              specifications={[
+                { label: "Толщина", value: "10 мм" },
+                { label: "Размер", value: "1525×1525" },
+                { label: "Сорт", value: "Экстра" },
+                { label: "Стандарт", value: "ГОСТ 102-75" },
+                { label: "Прочность", value: "80+ МПа" },
+                { label: "Качество", value: "Авиационное" }
+              ]}
+              advantages={[
+                "Исключительная прочность",
+                "Минимальный вес",
+                "Точность геометрии",
+                "Высочайшее качество поверхности"
+              ]}
+              applications={[
+                "Авиамоделизм",
+                "Точное машиностроение",
+                "Элитная мебель",
+                "Музыкальные инструменты"
+              ]}
+              inStock={false}
+            />
+
+            <ProductCard
+              title="Фанера OSB-3 влагостойкая"
+              description="Ориентированно-стружечная плита с повышенной влагостойкостью. Современная альтернатива фанере."
+              image="/img/cacfb948-622f-40fa-a846-d011c21f1b2e.jpg"
+              price="1 450 ₽"
+              specifications={[
+                { label: "Толщина", value: "12 мм" },
+                { label: "Размер", value: "1250×2500" },
+                { label: "Класс", value: "OSB-3" },
+                { label: "Влагостойкость", value: "Повышенная" },
+                { label: "Плотность", value: "650 кг/м³" },
+                { label: "Набухание", value: "<15%" }
+              ]}
+              advantages={[
+                "Отличная влагостойкость",
+                "Стабильность размеров",
+                "Хорошие теплоизоляционные свойства",
+                "Экономичность"
+              ]}
+              applications={[
+                "Каркасное строительство",
+                "Обшивка стен",
+                "Кровельные работы",
+                "Черновые полы"
+              ]}
+              inStock={true}
+            />
+
+            <ProductCard
+              title="Фанера морская БС-1"
+              description="Специальная морская фанера с использованием бакелитового клея. Максимальная влагостойкость."
+              image="/img/c87f5b9e-6d7b-433c-9819-a4b2acd34638.jpg"
+              price="8 950 ₽"
+              specifications={[
+                { label: "Толщина", value: "18 мм" },
+                { label: "Размер", value: "1525×1525" },
+                { label: "Сорт", value: "I/I" },
+                { label: "Клей", value: "Бакелитовый" },
+                { label: "Водостойкость", value: "Абсолютная" },
+                { label: "Применение", value: "Морское" }
+              ]}
+              advantages={[
+                "Абсолютная водостойкость",
+                "Стойкость к солёной воде",
+                "Биостойкость",
+                "Исключительная долговечность"
+              ]}
+              applications={[
+                "Судостроение",
+                "Гидротехнические сооружения",
+                "Мостостроение",
+                "Экстремальные условия"
+              ]}
+              inStock={false}
+            />
+
+            <ProductCard
+              title="Фанера берёзовая 3мм"
+              description="Тонкая декоративная фанера для моделирования и творческих работ. Легко режется и гнётся."
+              image="/img/84e3725c-a054-4dca-b6ba-96b37f05b63e.jpg"
+              price="1 250 ₽"
+              specifications={[
+                { label: "Толщина", value: "3 мм" },
+                { label: "Размер", value: "1525×1525" },
+                { label: "Сорт", value: "I/II" },
+                { label: "Слоев", value: "3" },
+                { label: "Вес", value: "2.04 кг/лист" },
+                { label: "Гибкость", value: "Очень высокая" }
+              ]}
+              advantages={[
+                "Минимальная толщина",
+                "Высокая гибкость",
+                "Точная геометрия",
+                "Гладкая поверхность"
+              ]}
+              applications={[
+                "Авиамоделизм",
+                "Художественные работы",
+                "Лазерная резка",
+                "Декоративные элементы"
+              ]}
+              inStock={true}
+            />
+
+            <ProductCard
+              title="Фанера шлифованная Ш1"
+              description="Односторонне шлифованная березовая фанера. Готова к окраске и финишной отделке."
+              image="/img/9d0e99d4-d910-4fe6-b0d9-8b18ef1cb16e.jpg"
+              price="3 150 ₽"
+              specifications={[
+                { label: "Толщина", value: "15 мм" },
+                { label: "Размер", value: "1525×1525" },
+                { label: "Сорт", value: "II/III" },
+                { label: "Шлифовка", value: "Ш1" },
+                { label: "Шероховатость", value: "Ra 6.3" },
+                { label: "Готовность", value: "К отделке" }
+              ]}
+              advantages={[
+                "Готовая к отделке поверхность",
+                "Равномерная шероховатость",
+                "Отсутствие дефектов поверхности",
+                "Экономия времени на подготовку"
+              ]}
+              applications={[
+                "Мебельное производство",
+                "Декоративные панели",
+                "Окрашиваемые поверхности",
+                "Фасадные работы"
+              ]}
+              inStock={true}
+            />
           </div>
         </div>
       </section>
