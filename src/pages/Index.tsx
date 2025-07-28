@@ -497,7 +497,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="animate-scale-in">
+            <div className="animate-scale-in space-y-6">
               <div className="bg-white p-8 rounded-lg shadow-lg">
                 <h3 className="text-2xl font-bold text-foreground mb-4">
                   Наши преимущества
@@ -540,6 +540,74 @@ const Index = () => {
                     </span>
                   </li>
                 </ul>
+              </div>
+
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center">
+                  <Icon name="FileText" className="h-6 w-6 mr-2" />
+                  Реквизиты компании
+                </h3>
+                <div className="space-y-4 text-sm">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <div className="flex justify-between border-b pb-2">
+                        <span className="font-medium text-foreground">Полное наименование:</span>
+                        <span className="text-muted-foreground text-right">
+                          ООО "ФанераПроф"
+                        </span>
+                      </div>
+                      <div className="flex justify-between border-b pb-2">
+                        <span className="font-medium text-foreground">ИНН:</span>
+                        <span className="text-muted-foreground">7734567890</span>
+                      </div>
+                      <div className="flex justify-between border-b pb-2">
+                        <span className="font-medium text-foreground">КПП:</span>
+                        <span className="text-muted-foreground">773401001</span>
+                      </div>
+                      <div className="flex justify-between border-b pb-2">
+                        <span className="font-medium text-foreground">ОГРН:</span>
+                        <span className="text-muted-foreground">1037739123456</span>
+                      </div>
+                      <div className="flex justify-between border-b pb-2">
+                        <span className="font-medium text-foreground">ОКПО:</span>
+                        <span className="text-muted-foreground">12345678</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex justify-between border-b pb-2">
+                        <span className="font-medium text-foreground">Юридический адрес:</span>
+                        <span className="text-muted-foreground text-right">
+                          125362, г. Москва,<br />
+                          ул. Производственная, д.15
+                        </span>
+                      </div>
+                      <div className="flex justify-between border-b pb-2">
+                        <span className="font-medium text-foreground">Банк:</span>
+                        <span className="text-muted-foreground text-right">
+                          ПАО "Сбербанк России"
+                        </span>
+                      </div>
+                      <div className="flex justify-between border-b pb-2">
+                        <span className="font-medium text-foreground">Р/с:</span>
+                        <span className="text-muted-foreground">40702810123456789012</span>
+                      </div>
+                      <div className="flex justify-between border-b pb-2">
+                        <span className="font-medium text-foreground">К/с:</span>
+                        <span className="text-muted-foreground">30101810400000000225</span>
+                      </div>
+                      <div className="flex justify-between border-b pb-2">
+                        <span className="font-medium text-foreground">БИК:</span>
+                        <span className="text-muted-foreground">044525225</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-6 pt-4 border-t">
+                    <div className="flex items-center justify-between">
+                      <span className="font-medium text-foreground">Генеральный директор:</span>
+                      <span className="text-muted-foreground">Иванов Иван Иванович</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
